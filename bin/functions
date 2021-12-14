@@ -24,6 +24,13 @@ case "${KERNEL_NAME}" in
            STAT_OPTS=('-c' '%Z')
            TEMP_DIR=$(mktemp -dp /tmp asdf-java.XXXXXXXX)
            ;;
+    MINGW64_NT-10.0-22000)
+           OS="cygwin"
+           SHA256SUM="sha256sum"
+           STAT="stat"
+           STAT_OPTS=('-c' '%Z')
+           TEMP_DIR=$(mktemp -dp /tmp asdf-java.XXXXXXXX)
+           ;;
     *) echo "Unknown operating system: ${KERNEL_NAME}"
        exit 1
 esac
