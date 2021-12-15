@@ -25,7 +25,7 @@ case "${KERNEL_NAME}" in
            TEMP_DIR=$(mktemp -dp /tmp asdf-java.XXXXXXXX)
            ;;
     MINGW64_NT-10.0-22000)
-           OS="cygwin"
+           OS="windows"
            SHA256SUM="sha256sum"
            STAT="stat"
            STAT_OPTS=('-c' '%Z')
